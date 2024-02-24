@@ -22,7 +22,7 @@ def comunicate():
   bot_message = response.choices[0].messages
   messages.append(bot_message)
 
-  st.session_state("user_input") = ""
+  st.session_state["user_input"] = ""
 
   st.title("Desarrolador AI")
   st.write("Utilizando la API chatGPT, este chatbot ofrece capacidades conversacionales avanzadas.")
