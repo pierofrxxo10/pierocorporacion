@@ -27,7 +27,7 @@ def comunicate():
         st.session_state["user_input"] = ""  # Reset user input after processing
 
     st.title("PIEROBOT AI")
-    st.write("Utilizando la API chatGPT, este chatbot ofrece capacidades conversacionales avanzadas.")
+    st.write("Utilizando esta API chatGPTs, podras resolver todas tus consultas existenciales.")
 
     st.text_input("Ingrese su consulta aquí", key="user_input", on_change=comunicate)
 
