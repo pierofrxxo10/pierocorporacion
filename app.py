@@ -1,4 +1,13 @@
-  
+import streamlit as st
+from openai import OpenAI
+
+client = OpenAI(api_key=st.secrets.OpenAIAPI.openai_api_key)
+
+if "messages" not in st.session_state:
+    st.session_state["messages"] = [
+        {"role": "system", "content": "Piensa como un ingeniero de Software"}
+    ]
+
 def comunicate():
     user_input = st.session_state.get("user_input", "")  # Get user input from session state
     if user_input.strip():  # Check if user input is not empty
